@@ -168,7 +168,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_e,		spawn,		SHCMD("$BROWSER https://gmail.com") },
 	//{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD(TERMINAL " -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("$BROWSER http://localhost:8080/advertiser_war_exploaded/ & intellij-idea-ultimate-edition & gitkraken") },
-	{ MODKEY,			XK_r,		spawn,		SHCMD(TERMINAL " -e lf") },
+	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("$BROWSER http://localhost:8080/advertiser_war_exploaded/ http://localhost:8080/publisher_war_exploaded/ http://localhost:8080/admin_war_exploaded/ & intellij-idea-ultimate-edition & gitkraken") },
+	{ MODKEY,			XK_r,		spawn,		SHCMD(TERMINAL " -e ranger") },
 	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD(TERMINAL " -e htop") },
 	//{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("bitwarden-desktop") },
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
@@ -284,7 +285,7 @@ static Key keys[] = {
 	{ 0, XF86XK_ScreenSaver,	spawn,		SHCMD("slock & xset dpms force off; mpc pause; pauseallmpv") },
 	{ 0, XF86XK_TaskPane,		spawn,		SHCMD(TERMINAL " -e htop") },
 	{ 0, XF86XK_Mail,		spawn,		SHCMD(TERMINAL " -e neomutt ; pkill -RTMIN+12 dwmblocks") },
-	{ 0, XF86XK_MyComputer,		spawn,		SHCMD(TERMINAL " -e lf /") },
+	{ 0, XF86XK_MyComputer,		spawn,		SHCMD(TERMINAL " -e ranger /") },
 	/* { 0, XF86XK_Battery,		spawn,		SHCMD("") }, */
 	{ 0, XF86XK_Launch1,		spawn,		SHCMD("xset dpms force off") },
 	{ 0, XF86XK_TouchpadToggle,	spawn,		SHCMD("(synclient | grep 'TouchpadOff.*1' && synclient TouchpadOff=0) || synclient TouchpadOff=1") },
