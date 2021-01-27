@@ -168,7 +168,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_e,		spawn,		SHCMD("$BROWSER https://gmail.com") },
 	//{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD(TERMINAL " -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("$BROWSER http://localhost:8080/advertiser_war_exploded/ & intellij-idea-ultimate-edition & gitkraken") },
-	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("$BROWSER http://localhost:8080/advertiser_war_exploded/ http://localhost:8080/publisher_war_exploded/ http://localhost:8080/admin_war_exploded/ & intellij-idea-ultimate-edition & gitkraken") },
+	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("$BROWSER http://localhost:8080/advertiser_war_exploded/ http://localhost:8080/publisher_war_exploded/ http://localhost:8080/admin_war_exploded/ & intellij-idea-ultimate-edition & gitkraken & datagrip") },
 	{ MODKEY,			XK_r,		spawn,		SHCMD(TERMINAL " -e ranger") },
 	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD(TERMINAL " -e htop") },
 	//{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("bitwarden-desktop") },
